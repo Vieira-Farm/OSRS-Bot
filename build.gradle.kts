@@ -70,6 +70,7 @@ val repoCopy = tasks.create("repoCopy") {
     doLast {
         val repoDeployDir = this.project.projectDir.resolve("build/repo-deploy").also { it.mkdirs() }
         allprojects
+                .filter { it.path != project.path }
                 .map { it.projectDir.resolve("build/repo-deploy") }
                 .filter { it.exists() }
                 .mapNotNull { it.listFiles()?.getOrNull(0) }
