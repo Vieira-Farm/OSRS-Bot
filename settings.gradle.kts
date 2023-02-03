@@ -1,5 +1,5 @@
-rootProject.name = "multi-script-template"
+rootProject.name = "vieira-bot"
 
-include("libraries:my-library")
-
-include("scripts:my-script")
+include("flufleesapi:api")
+include("tutorial:tribot")
+include("scripts:all-in-one")
