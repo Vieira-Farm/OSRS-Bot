@@ -1,5 +1,5 @@
 
 dependencies {
-    implementation(project(":tutorial:tribot"))
-    implementation(project(":flufleesapi:api"))
+    implementation(project(":libraries:flufleesapi:api"))
+    implementation(project(mapOf("path" to ":scripts:tutorial")))
 }

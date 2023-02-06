@@ -1,5 +1,5 @@
 rootProject.name = "vieira-bot"
 
-include("flufleesapi:api")
-include("tutorial:tribot")
+include("libraries:flufleesapi:api")
+include("scripts:tutorial")
 include("scripts:all-in-one")

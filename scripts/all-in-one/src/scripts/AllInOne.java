@@ -3,8 +3,7 @@ package scripts;
 import org.tribot.api.General;
 import org.tribot.script.Script;
 import org.tribot.script.ScriptManifest;
-import script.TutorialIsland;
-import script.TutorialIslandScript;
+import scripts.script.TutorialIslandScript;
 
 @ScriptManifest(name = "AllInOne", authors = { "Letsmakemoneybitch" }, category = "MoneyMaking")
 public class AllInOne extends Script {
