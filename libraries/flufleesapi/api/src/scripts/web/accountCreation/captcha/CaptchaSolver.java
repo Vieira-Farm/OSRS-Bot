@@ -66,6 +66,8 @@ public abstract class CaptchaSolver {
         SUCCESS,
         UNKNOWN,
         ZERO_BALANCE,
+
+        NO_SUCH_CAPCHA_ID
         ;
     }
 }
