@@ -1,11 +1,10 @@
-package scripts.tutorial.script
+package scripts.romeoandjuliet.script
 
 import org.tribot.api.General
 import org.tribot.script.ScriptManifest
 import org.tribot.script.interfaces.Painting
 import org.tribot.script.interfaces.Starting
-import scripts.data.accounts.AccountDetails
-import scripts.tutorial.missions.login.LoginMission
+import scripts.romeoandjuliet.missions.RomeoAndJuliet
 import scripts.scripting.frameworks.mission.missiontypes.Mission
 import scripts.scripting.frameworks.mission.scriptTypes.MissionScript
 import scripts.scripting.painting.scriptpaint.ScriptPaint
@@ -13,28 +12,27 @@ import scripts.scripting.painting.scriptpaint.ScriptPaint
 @ScriptManifest(
     authors = ["Letsmakemoneybitch"],
     category = "Vieira's Bot Farm",
-    name = "[StartUp] - Tutorial Island",
+    name = "[Quest] - Romeo And Juliet",
     version = 1.0,
-    description = "Finishes the Tutorial Island.",
+    description = "Finishes the Romeo and Juliet quest.",
     gameMode = 1
 )
-class TutorialIslandScript(
-    private val accountDetails: AccountDetails
-): MissionScript(), Painting, Starting {
-    override fun getMission(): Mission {
-        General.println("username: ${accountDetails.username}")
-        return LoginMission(accountDetails)
-    }
+class RomeoAndJulietScript : MissionScript(), Painting, Starting {
+
     override fun onStart() {
         this.loginBotState = true
     }
 
     override fun preScriptTasks() {
-        General.println("TutorialIslandScript: preScriptTasks")
+        General.println("RomeoAndJulietScript: preScriptTasks")
         setScriptPaint(
-            ScriptPaint.Builder(ScriptPaint.hex2Rgb("#ff0054"), "Tutorial Island")
+            ScriptPaint.Builder(ScriptPaint.hex2Rgb("#ff0054"), "Romeo And Juliet")
                 .addField("Version", 1.00.toString())
                 .build()
         )
     }
+    override fun getMission(): Mission {
+        return RomeoAndJuliet()
+    }
+
 }

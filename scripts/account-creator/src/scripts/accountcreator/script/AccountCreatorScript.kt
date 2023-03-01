@@ -17,12 +17,9 @@ import scripts.web.accountCreation.captcha.CaptchaSolver
 @ScriptManifest(
     authors = ["Letsmakemoneybitch"],
     category = "Vieira's Bot Farm",
-    name = "Account Creator",
+    name = "[StartUp] - Account Creator",
     version = 1.0,
-    description = "Creates accounts using the following arguments. <br>" +
-            "accountEmail:email_address;accountPassword:password;;proxyIP:192.168.0.1;proxyPort:1080;" +
-            "proxyUsername:username;proxyPassword:password;useProxyCaptcha:true;captchaSolver:ANTI_CAPTCHA;" +
-            "captchaKey:captchaKey;",
+    description = "Creates accounts on OSRS website.",
     gameMode = 1
 )
 class AccountCreatorScript(

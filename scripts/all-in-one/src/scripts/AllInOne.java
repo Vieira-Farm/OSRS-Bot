@@ -7,7 +7,7 @@ import scripts.data.accounts.AccountDetails;
 import scripts.accountcreator.script.AccountCreatorScript;
 import scripts.tutorial.script.TutorialIslandScript;
 
-@ScriptManifest(name = "AllInOne", authors = {"Letsmakemoneybitch"}, category = "Vieira's Bot Farm")
+@ScriptManifest(name = "[Main] - AllInOne", authors = {"Letsmakemoneybitch"}, category = "Vieira's Bot Farm")
 public class AllInOne extends Script {
     @Override
     public void run() {
